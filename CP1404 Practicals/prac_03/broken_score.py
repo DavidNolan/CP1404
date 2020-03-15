@@ -1,16 +1,24 @@
 """CP1404 - Practical
 Program to determine score status
 """
+import random
 
-score = float(input("Enter score: "))
-if score < 0:
-    print("Invalid score")
-elif score > 100:
-    print("Invalid score")
-else:
-    if score >= 90:
-        print("Excellent")
+
+def main():
+    score = random.randrange(1, 100)
+    print(score)
+    print(determine_score(score))
+
+
+def determine_score(score):
+    if score < 0 or score > 100:
+        return "Invalid number"
+    elif score >= 90:
+        return "Excellent"
     elif score >= 50:
-        print("Passable")
-    elif score < 50:
-        print("Bad")
+        return "Passable"
+    else:
+        return "Bad"
+
+
+main()
