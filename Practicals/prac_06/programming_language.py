@@ -1,8 +1,6 @@
 class ProgrammingLanguage:
-    """Represent information about a programming language."""
 
     def __init__(self, name, typing, reflection, year):
-        """Construct a ProgrammingLanguage from the given values."""
         self.name = name
         self.typing = typing
         self.reflection = reflection
@@ -17,13 +15,13 @@ class ProgrammingLanguage:
 
 
 def run_tests():
-    """Run simple tests/demos on ProgrammingLanguage class."""
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
 
-    languages = [ruby, python, visual_basic]
+    print(ruby)
     print(python)
+    print(visual_basic)
 
 
 if __name__ == "__main__":

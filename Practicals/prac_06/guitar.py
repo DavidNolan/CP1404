@@ -1,3 +1,5 @@
+# Guitar Class file
+
 CURRENT_YEAR = 2020
 VINTAGE_AGE = 50
 

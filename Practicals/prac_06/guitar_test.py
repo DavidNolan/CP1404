@@ -1,3 +1,4 @@
+# Guitar Age and vintage test program
 from Practicals.prac_06.guitar import Guitar
 
 CURRENT_YEAR = 2020
