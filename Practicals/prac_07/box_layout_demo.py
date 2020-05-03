@@ -9,9 +9,12 @@ class BoxLayoutDemo(App):
         return self.root
 
     def handle_greet(self):
+        # Changes button 3 to Hello plus input
         self.root.ids.output_label.text = "Hello " + self.root.ids.input_name.text
 
     def handle_reset(self):
+        # handles clearing input and changes.
+        # Self-Note: can it be simplified and how
         self.root.ids.input_name.text = " "
         self.root.ids.output_label.text = "Greet"
 

@@ -16,7 +16,8 @@ class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
     def build(self):
         """ build the Kivy app from the kv file """
-        Window.size = (200, 100)
+        Window.size = (600, 300)
+        # Self-Note: default window size setting, not necessary but useful
         self.title = "Square Number"
         self.root = Builder.load_file('squaring.kv')
         return self.root
@@ -24,6 +25,7 @@ class SquareNumberApp(App):
     def handle_calculate(self, value):
         """ handle calculation (could be button press or other call), output result to label widget """
         result = value ** 2
+        # Self-Note: Double star is power of x
         self.root.ids.output_label.text = str(result)
 
 
